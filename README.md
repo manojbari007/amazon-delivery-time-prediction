@@ -2,7 +2,10 @@
 
 An end-to-end Machine Learning solution to predict delivery arrival times with high accuracy using historical logistics data.
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://amazon-delivery-time-prediction-besx8j26hpnjxyqc8nas75.streamlit.app/)
+
 ## 🚀 Key Features
+
 - **Geospatial Analytics:** Geodesic distance calculations between fulfillment centers and customers.
 - **Advanced Feature Engineering:** Time-of-day peak analysis, weekend effects, and pickup latency factors.
 - **Multi-Model Pipeline:** Automated training and comparison of Linear Regression, Random Forest, and XGBoost.
@@ -10,6 +13,7 @@ An end-to-end Machine Learning solution to predict delivery arrival times with h
 - **Premium Dashboard:** High-fidelity Streamlit interface with interactive analytics and real-time predictions.
 
 ## 🛠️ Tech Stack
+
 - **Languages:** Python
 - **Data:** Pandas, NumPy, Geopy
 - **ML:** Scikit-Learn, XGBoost
@@ -17,6 +21,7 @@ An end-to-end Machine Learning solution to predict delivery arrival times with h
 - **UI:** Streamlit, Seaborn, Matplotlib
 
 ## 📋 Project Structure
+
 ```text
 ├── dataset/             # Raw and processed CSV files
 ├── models/              # Serialized best models (.pkl)
@@ -33,11 +38,13 @@ An end-to-end Machine Learning solution to predict delivery arrival times with h
 ## ⚙️ Execution Guide
 
 1. **Environment Setup**
+
    ```bash
    pip install -r requirements.txt
    ```
 
 2. **Data Pipeline (Run in sequence)**
+
    ```powershell
    python src/data_preprocessing.py  # Clean raw data
    python src/feature_engineering.py # Generate features
@@ -45,10 +52,12 @@ An end-to-end Machine Learning solution to predict delivery arrival times with h
    ```
 
 3. **Machine Learning & Tracking**
+
    ```bash
    python src/model_training.py
    ```
-   *The script selects the best performing model (highest R²) and saves it to `models/best_model.pkl`.*
+
+   _The script selects the best performing model (highest R²) and saves it to `models/best_model.pkl`._
 
 4. **Launch Dashboard**
    ```bash
@@ -56,7 +65,9 @@ An end-to-end Machine Learning solution to predict delivery arrival times with h
    ```
 
 ## 📊 Business Impact
+
 By accurately predicting delivery windows, this solution helps:
+
 - Improve **Customer Satisfaction** via precise ETAs.
 - Optimize **Fleet Management** by identifying bottleneck traffic paths.
 - Enhance **Agent Evaluation** based on normalized rating benchmarks.
